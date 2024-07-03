@@ -1,18 +1,18 @@
 {
   "author": {
     "name": "Brian Holt",
-    "company": "Stripe"
+    "company": "SQLite Cloud"
   },
-  "title": "Next.js Course Starter Kit",
-  "subtitle": "for Frontend Masters",
-  "frontendMastersLink": "https://frontendmasters.com/courses/complete-react-v8/",
+  "title": "Complete Intro to SQLite",
+  "subtitle": "A quick and complete intro to building on SQLite",
+  "frontendMastersLink": "https://frontendmasters.com/courses/sqlite/",
   "social": {
     "linkedin": "btholt",
     "github": "btholt",
     "twitter": "holtbt"
   },
-  "description": "A starter kit for making really amazing courses, optimized for Frontend Masters",
-  "keywords": ["your", "Google", "keywords", "here"],
-  "productionBaseUrl": "/next-course-starter",
+  "description": "Learn how to build on SQLite with this quick and complete course with Brian Holt. SQLite is a powerful database that is easy to get started with and is a great tool for building both small and large applications.",
+  "keywords": ["SQL", "SQLite", "Databases", "Web Development", "Node.js", "JavaScript", "Brian Holt", "Frontend Masters"],
+  "productionBaseUrl": "/",
   "csvPath": "./out/lessons.csv"
 }
