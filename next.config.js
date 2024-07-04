@@ -9,7 +9,7 @@ const config = {
   output: "export",
   basePath: BASE_URL,
   env: {
-    BASE_URL,
+    BASE_URL: BASE_URL ? BASE_URL : "http://localhost:3000",
   },
 };
 
