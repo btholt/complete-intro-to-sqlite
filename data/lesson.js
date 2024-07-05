@@ -44,7 +44,7 @@ function slugify(inputPath) {
 
 export async function getLessons() {
   marked.setOptions({
-    baseUrl: process.env.BASE_URL ? process.env.BASE_URL + "/" : "/",
+    baseUrl: "/",
     highlight: function (code, lang) {
       const language = hljs.getLanguage(lang) ? lang : "plaintext";
       return hljs.highlight(code, { language }).value;
@@ -188,7 +188,7 @@ export async function getLesson(targetDir, targetFile) {
             prevSlug = null;
           }
 
-          const base = process.env.BASE_URL ? process.env.BASE_URL : "/";
+          const base = "/";
 
           return {
             attributes: data,

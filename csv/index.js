@@ -14,7 +14,6 @@ async function start() {
     return;
   }
 
-  process.env.BASE_URL = config?.productionBaseUrl || "";
   const sections = await getLessons();
 
   const lessons = [];

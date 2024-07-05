@@ -13,6 +13,5 @@
   },
   "description": "Learn how to build on SQLite with this quick and complete course with Brian Holt. SQLite is a powerful database that is easy to get started with and is a great tool for building both small and large applications.",
   "keywords": ["SQL", "SQLite", "Databases", "Web Development", "Node.js", "JavaScript", "Brian Holt", "Frontend Masters"],
-  "productionBaseUrl": "",
   "csvPath": "./out/lessons.csv"
 }
