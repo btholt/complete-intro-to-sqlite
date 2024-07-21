@@ -1,3 +1,7 @@
+---
+title: "Installing SQLite"
+---
+
 What's great is that SQLite is probably already on your device. For Windows you may have to look for it but in MacOS and Linux, you should be able to get just run `sqlite3` and it should get you into a temporary session.
 
 ### Windows
@@ -24,7 +28,9 @@ If you need an alternative way to that (or need to get 3.46.0 specifically like 
 
 ## Chinook
 
-We'll also be using [Chinook][chinook], a sample set of data. Please download the v1.4.5 Chinook_Sqlite.sql file as well.
+We'll also be using [Chinook][chinook], a sample set of data. Please download the v1.4.5 Chinook_Sqlite.sql file as well. I'll teach you how to use it in a bit, but suffice to say it's a dataset about movies that we'll use to have a quick intro to querying.
+
+## Start my server
 
 [download]: https://sqlite.org/download.html
 [windows]: https://sqlite.org/2024/sqlite-dll-win-x64-3460000.zip
