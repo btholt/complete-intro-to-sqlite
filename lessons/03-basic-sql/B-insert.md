@@ -16,7 +16,7 @@ This inserts a new artist into the Artist table. That table will have one column
 INSERT INTO food (name, food_group, color) VALUES ('carrot', 'vegetable', 'orange'); -- notice the order is the same
 ```
 
-Also note that here you could use double quotes (though I typically won't.)
+Also, note that here you could use double quotes (though I typically won't.)
 
 ```sql
 INSERT INTO "Artist" ("name") VALUES ('Radiohead');
@@ -43,7 +43,7 @@ One more update, let's change it to a different French techno group
 UPDATE Artist SET name = 'Justice' WHERE name = 'Daft Punk' RETURNING *;
 ```
 
-The returning allows you to basically SELECT the rows you're updating so you can see what changed.
+The returning allows you to SELECT the rows you're updating so you can see what changed.
 
 ## DELETE
 
