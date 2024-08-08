@@ -4,7 +4,7 @@ description: ""
 
 Occasionally you need to query for macro statistics about your tables, not just query for individual rows.
 
-Let's use that we've already used before, `COUNT`. What if we want to know how many tracks we have overall in our track table?
+Let's use what we've already used before, `COUNT`. What if we want to know how many tracks we have overall in our track table?
 
 ```sql
 SELECT COUNT(*) FROM Track;
@@ -18,13 +18,13 @@ What if we wanted to count how many distinct `genre`s of tracks we have in the T
 SELECT COUNT(DISTINCT GenreId) FROM Track;
 ```
 
-This is going to tell how many different `type`s we have in the ingredients table. Keep in mind the query to see _what_ the distinct ingredients is
+This is going to tell how many different `type`s we have in the ingredients table. Keep in mind the query to see _what_ the distinct ingredients are.
 
 ```sql
 SELECT DISTINCT GenreId FROM Track;
 ```
 
-The first query gives you the number, the count of many distinct things are in the list. The second query gives you what those distinct things are with no indication of how many of each there are. There could be 1 fruit and 10,000 vegetables and you'd have no indication of that.
+The first query gives you the number, the count of many distinct things in the list. The second query gives you what those distinct things are with no indication of how many of each there are. There could be 1 fruit and 10,000 vegetables and you'd not indicate that.
 
 Okay, so you want to see both at the same time? Let's see that.
 
@@ -54,7 +54,7 @@ GROUP BY
   Track.GenreId; -- you can also have Genre.GenreId here, no difference
 ```
 
-This one can be a bit of a mind trip. Remember the aggregation happens at the end. So all your select happens, then on the row set, it goes and runs the aggregation function here using the GROUP BY. So we get a bunch of rows with their Genre.Name attached, and then we count those up.
+This one can be a bit of a mind trip. Remember the aggregation happens at the end. So after all your selects happen, then on the row set, it goes and runs the aggregation function here using the GROUP BY. So we get a bunch of rows with their Genre.Name attached, and then we count those up.
 
 What if we wanted to find the biggest or smallest TrackId with each genre? (Doesn't seem that useful but I'll still show you how.)
 
@@ -92,7 +92,7 @@ GROUP BY
   Track.GenreId;
 ```
 
-You can't use WHERE because that applies to the initial result set. You could filter out all rock songs or only select tracks with a certain length. But you can't filter based on the aggregated values because that happens after WHERE happens. This is HAVING is useful.
+You can't use WHERE because that applies to the initial result set. You could filter out all rock songs or only select tracks with a certain length. But you can't filter based on the aggregated values because that happens after WHERE happens. This is why HAVING is useful.
 
 ```sql
 SELECT
