@@ -530,4 +530,7 @@ pre code.hljs {
 pre code,
 pre code.hljs {
   display: block;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 5px;
 }
