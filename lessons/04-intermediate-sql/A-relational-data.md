@@ -1,12 +1,12 @@
-So far we've done a one to one matching of records. We've used a record in a database to represent one item: one band member, band, etc.
+So far we've done a one-to-one matching of records. We've used a record in a database to represent one item: one band member, band, etc.
 
 Now we're going to get into records that can relate to each other. Let's think about albums. A recipe has multiple ingredients. That **has** word is key here. It means there is a relationship. A single recipe has many ingredients. An ingredient can also be in many recipes. A tomato is both in pizza sauce and in a BLT. This is called a many-to-many relationship.
 
-There's also one-to-many relationships, like imagine if we had multiple photos of each of our ingredients. A single ingredient will have five photos. And those photos will only will only belong to one ingredient. A photo of a green pepper doesn't make sense to belong to anything besides the green pepper ingredient.
+There are also one-to-many relationships, like imagine if we had multiple photos of each of our ingredients. A single ingredient will have five photos. And those photos will only will only belong to one ingredient. A photo of a green pepper doesn't make sense to belong to anything besides the green pepper ingredient.
 
-There can also exist one-to-one relationships but in general you would just make those the same record all together. You could split up the type and title into two tables, but why would you? Then you have a data sync problem. What if a band renames themselves? Ex: On a Friday → Radiohead, Prince → The Artist Formerly Known as Prince, The Quarrymen → The Beatles. Anyone that has ever tried to manually keep data in sync in two+ places knows eventually you will have issues.
+There can also exist one-to-one relationships but in general, you would just make those the same record altogether. You could split up the type and title into two tables, but why would you? Then you have a data sync problem. What if a band renames themselves? Ex: On a Friday → Radiohead, Prince → The Artist Formerly Known as Prince, The Quarrymen → The Beatles. Anyone who has ever tried to manually keep data in sync in two+ places knows eventually you will have issues.
 
-Luckily we can use relational data to have one table of bands, and one table of albums.
+Luckily we can use relational data to have one table of bands and one table of albums.
 
 ```sql
 SELECT * FROM Album LIMIT 5;
@@ -42,7 +42,7 @@ JOIN
 LIMIT 5;
 ```
 
-You can give tables aliases so they're easier to refer to. Some of the table names can get quite long so it's possible that this can make it more readable. In this case I'd argue that the single letter variable names make it _less_ readable, that's up to you.
+You can give tables aliases so they're easier to refer to. Some of the table names can get quite long so this can make it more readable. In this case, I'd argue that the single-letter variable names make it _less_ readable, that's up to you.
 
 ## You can use WHERE!
 
@@ -78,7 +78,7 @@ WHERE
     Album.Title LIKE '%live%';
 ```
 
-As you can see, once you set up the JOIN and how you want to join the tables together, you can start filtering your results based on either table. The first query we askd for just Nirvana's albums, the second is just albums named `IV`, and the third we're asking for any album that `live` in it.
+As you can see, once you set up the JOIN and how you want to join the tables together, you can start filtering your results based on either table. The first query we asked for only Nirvana's albums, the second is just albums named `IV`, and the third we're asking for any album that `live` in it.
 
 ## Joining more than two tables
 

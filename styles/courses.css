@@ -518,6 +518,7 @@ ol.sections-name .lesson-details {
 code,
 pre code {
   padding: .5rem;
+  text-wrap: wrap;
 }
 
 code,

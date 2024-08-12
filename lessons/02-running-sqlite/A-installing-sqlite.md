@@ -2,7 +2,7 @@
 title: "Installing SQLite"
 ---
 
-What's great is that SQLite is probably already on your device. For Windows you may have to look for it but in MacOS and Linux, you should be able to get just run `sqlite3` and it should get you into a temporary session.
+What's great is that SQLite is probably already on your device. For Windows you may have to look for it but in MacOS and Linux, you should be able to run `sqlite3` and it should get you into a temporary session.
 
 ### Windows
 

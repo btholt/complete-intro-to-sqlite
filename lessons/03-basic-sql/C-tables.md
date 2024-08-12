@@ -10,7 +10,7 @@ CREATE TABLE BandMember (
 
 > SQLite has only four real data types: INTEGER, REAL, TEXT, and BLOB. It is a dynamically typed system. Therefore you can give datatypes like TINYINT but SQLite will just treat it like an INTEGER and likewise you can give a type of VARCHAR(255) but it will just treat it like TEXT (and therefore won't truncate it.) [See more here][types].
 
-To see the table you created, run `.schema BandMember` in your psql instance to see it and the the sequence that you created. The sequence stores the `id` counter.
+To see the table you created, run `.schema BandMember` in your psql instance to see it and the sequence that you created. The sequence stores the `id` counter.
 
 We now have a table. A table is the actual repository of data. Think of a database like a folder and a table like a spreadsheet. You can have many spreadsheets in a folder. Same with tables.
 
@@ -26,7 +26,7 @@ Let's add a record to our table.
 INSERT INTO BandMember (name, role) VALUES ('Thom Yorke', 'singer') RETURNING *;
 ```
 
-This adds one row with a name of Thom Yorke and role of singer. Where is the id? Since we made it `PRIMARY KEY` it gets created automatically. Since this is the first item in our database, its ID will be `1`. As you have likely guessed already, the next item in the table will be `2`.
+This adds one row with the name of Thom Yorke and the role of singer. Where is the id? Since we made it `PRIMARY KEY` it gets created automatically. Since this is the first item in our database, its ID will be `1`. As you have likely guessed already, the next item in the table will be `2`.
 
 Let's see the record.
 
@@ -60,7 +60,7 @@ You can add multiple add a time as long as you comma separate them.
 
 ## ALTER TABLE
 
-Okay so now we have a table again. What happens if we wanted to add a third field to our table? Let's add an `image` field that will point to a URL of an image of the person.
+Okay so now we have a table again. What happens if we want to add a third field to our table? Let's add an `image` field that will point to a URL of an image of the person.
 
 ```sql
 ALTER TABLE BandMember ADD COLUMN image TEXT;
@@ -72,14 +72,14 @@ Likewise we can drop it too:
 ALTER TABLE BandMember DROP COLUMN image;
 ```
 
-There's a lot of ways to alter a table. You can make it UNIQUE like we did or NOT NULL. You can also change the data type. For now let's add back our extra column.
+There are a lot of ways to alter a table. You can make it UNIQUE like we did or NOT NULL. You can also change the data type. For now, let's add back our extra column.
 
 ```sql
 ALTER TABLE BandMember
 ADD COLUMN nationality TEXT NOT NULL DEFAULT 'UK';
 ```
 
-Specifying a DEFAULT when using a NOT NULL constraint will prevent errors if the column has existing null values. In this case we're saying "add a new non null column, and for those that exist give them the value of 'UK'."
+Specifying a DEFAULT when using a NOT NULL constraint will prevent errors if the column has existing null values. In this case, we're saying "add a new non-null column, and for those that exist give them the value of 'UK'."
 
 > SQLite does not allow you to do multiple alterations in one statement. If you want to add multiple columns, you have to do multiple alter tables commands.
 
