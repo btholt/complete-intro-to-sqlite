@@ -11,7 +11,7 @@
     "seo": "node summary/index.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.9.0",
     "marked": "^13.0.1",
