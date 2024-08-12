@@ -109,4 +109,4 @@ HAVING
     COUNT(Track.GenreId) > 300;
 ```
 
-Using HAVING we can filter on the aggregated set.
+Using HAVING we can filter on the aggregated set. Keep that mind if you ever need to do that.
