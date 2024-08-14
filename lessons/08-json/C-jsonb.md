@@ -1,3 +1,7 @@
+---
+title: "jsonb"
+---
+
 So we've been doing everything with the JSON functions but in reality we really want to use JSONB. It's a more compact way to represent JSON and it's faster to use. It makes everything a little harder to read but otherwise is just better.
 
 ```sql
