@@ -74,4 +74,5 @@ Growing SQLite
 - Litestream / Backups
 - LiteFS / Network Access
 - SQLite vs libSQL
-- SQLite Cloud
+
+TODO – subqueries
