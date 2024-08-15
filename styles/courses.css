@@ -337,6 +337,10 @@ blockquote > *:last-child {
   margin-bottom: 0;
 }
 
+blockquote > *:first-child {
+  margin-top: 0;
+}
+
 .lesson-content img {
   max-width: 100%;
 }
@@ -467,8 +471,8 @@ ol.sections-name .lesson-details {
   }
 
   ol.sections-name .lesson-preface {
-    font-size:60px
-   }
+    font-size: 60px;
+  }
 }
 
 .lesson-details h3 {
@@ -517,7 +521,7 @@ ol.sections-name .lesson-details {
 
 code,
 pre code {
-  padding: .5rem;
+  padding: 0.5rem;
   text-wrap: wrap;
 }
 
@@ -530,6 +534,8 @@ pre code.hljs {
 
 pre code,
 pre code.hljs {
+  background-color: white;
+  border: 2px solid var(--emphasized-border);
   display: block;
   padding: 1rem;
   overflow-x: auto;
