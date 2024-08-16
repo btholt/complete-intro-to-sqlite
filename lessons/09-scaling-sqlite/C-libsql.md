@@ -40,8 +40,8 @@ Run the query to add all the rows to the database. Once you've done that, [clone
 [sqld]: https://github.com/tursodatabase/libsql/blob/main/docs/BUILD-RUN.md#build-and-run-sqld
 [user]: https://github.com/tursodatabase/libsql/blob/main/docs/USER_GUIDE.md
 [bruno]: https://www.usebruno.com/
-[query]: /public/chinook-sqld.json
-[postman]: /public/sqld-collection.json
+[query]: /chinook-sqld.json
+[postman]: /sqld-collection.json
 [repo]: https://github.com/btholt/sqlite-app-libsql
 [sqlite3]: https://github.com/libsql/libsql-node-sqlite3
 [sdk]: https://github.com/tursodatabase/libsql-js

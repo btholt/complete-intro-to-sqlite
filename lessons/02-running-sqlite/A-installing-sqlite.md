@@ -28,9 +28,7 @@ If you need an alternative way to that (or need to get 3.46.0 specifically like 
 
 ## Chinook
 
-We'll also be using [Chinook][chinook], a sample set of data. Please download the v1.4.5 Chinook_Sqlite.sql file as well. I'll teach you how to use it in a bit, but suffice to say it's a dataset about movies that we'll use to have a quick intro to querying.
-
-## Start my server
+We'll also be using [Chinook][chinook], a sample set of data. Please download the v1.4.5 Chinook_Sqlite.sqlite file as well. I'll teach you how to use it in a bit, but suffice to say it's a dataset about music that we'll use to have a quick intro to querying.
 
 [download]: https://sqlite.org/download.html
 [windows]: https://sqlite.org/2024/sqlite-dll-win-x64-3460000.zip
