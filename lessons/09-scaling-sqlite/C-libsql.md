@@ -45,3 +45,4 @@ Run the query to add all the rows to the database. Once you've done that, [clone
 [repo]: https://github.com/btholt/sqlite-app-libsql
 [sqlite3]: https://github.com/libsql/libsql-node-sqlite3
 [sdk]: https://github.com/tursodatabase/libsql-js
+[turso]: https://turso.tech/

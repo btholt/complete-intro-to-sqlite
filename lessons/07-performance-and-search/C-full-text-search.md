@@ -36,7 +36,7 @@ CREATE VIRTUAL TABLE track_search USING FTS5(content="easy_tracks", content_rowi
 ```
 
 - We have to identify where the content is going to com from which will be a table. This table won't actually contain the rows but only the text searchable table that will have a rowid (which we identified as id; if you just call it rowid we don't have to tell it which rowid to use.)
-- We tell it what rows we want to include in full text search. Let's say we had producers in that table as well but we didn't want that to be searchable. No problem, you could write a query to select producers that have `MATCH 'black` and that still works fine! As long as it's in the view/table you're selecting from.
+- We tell it what rows we want to include in full text search. Let's say we had producers in that table as well but we didn't want that to be searchable. No problem, you could write a query to select producers that have `MATCH 'black'` and that still works fine! As long as it's in the view/table you're selecting from.
 - We're choosing to index the view we created earlier but you can definitely do it on normal tables as well.
 
 Okay, so because the table doesn't include the rows itself, we actually have to go populate it. We have to continually keep it up to date because [it does not automatically sync][sync] (unlike a view.)

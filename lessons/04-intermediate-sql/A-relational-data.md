@@ -1,8 +1,8 @@
 So far we've done a one-to-one matching of records. We've used a record in a database to represent one item: one band member, band, etc.
 
-Now we're going to get into records that can relate to each other. Let's think about albums. A recipe has multiple ingredients. That **has** word is key here. It means there is a relationship. A single recipe has many ingredients. An ingredient can also be in many recipes. A tomato is both in pizza sauce and in a BLT. This is called a many-to-many relationship.
+Now we're going to get into records that can relate to each other. Let's think about albums. An album has multiple tracks. That **has** word is key here. It means there is a relationship. A single album has many tracks. This is a one-to-many relationship – one album has multiple tracks. Those tracks belong to that album. A track does not belong to multiple albums (in theory you could model this differently but let's say we choose to model it this way.)
 
-There are also one-to-many relationships, like imagine if we had multiple photos of each of our ingredients. A single ingredient will have five photos. And those photos will only will only belong to one ingredient. A photo of a green pepper doesn't make sense to belong to anything besides the green pepper ingredient.
+A band member can belong to multiple bands, and a band has multiple members. Dave Grohl has been in Nirvana, Foo Fighters, and Them Crooked Vultures. This kind of relationship is called many-to-many. Recipes and ingredients would be another good example of this. A recipe has many ingredients, and an ingredient can belong to many recipes.
 
 There can also exist one-to-one relationships but in general, you would just make those the same record altogether. You could split up the type and title into two tables, but why would you? Then you have a data sync problem. What if a band renames themselves? Ex: On a Friday → Radiohead, Prince → The Artist Formerly Known as Prince, The Quarrymen → The Beatles. Anyone who has ever tried to manually keep data in sync in two+ places knows eventually you will have issues.
 

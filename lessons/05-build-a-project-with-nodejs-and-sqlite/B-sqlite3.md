@@ -92,3 +92,5 @@ db.get(
 Both are fine. Question marks rely on order, objection notation relies on names matching.
 
 This should be enough of an intro for you to write your sample app.
+
+[sqlite3]: https://github.com/TryGhost/node-sqlite3/wiki/API

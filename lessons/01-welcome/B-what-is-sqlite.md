@@ -48,11 +48,10 @@ SQLite is unbelievably fast. Because we don't have replication or networks to de
 
 Yes and no. No replication is a tight bottleneck and no network access means you need more tools to use SQLite as a distributed database. So, yes, you can, but you need more tools.
 
-The startup I work at, [SQLite Cloud][cloud] is a paid service that can do this for you (with a generous free tier). [LiteFS][litefs] is an open-source way to do it yourself.
+There are several paid services that do SQLite in the cloud and they're all lovely. It's very viable to build a big production app on SQLite.
 
 [timeline]: https://sqlite.org/src/timeline
 [gh]: https://github.com/sqlite/sqlite?tab=readme-ov-file
 [diff]: https://www.fossil-scm.org/home/doc/trunk/www/fossil-v-git.wiki#devorg
 [most-used]: https://sqlite.org/mostdeployed.html
-[cloud]: https://sqlitecloud.io?ref=fem
 [litefs]: https://github.com/superfly/litefs

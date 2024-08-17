@@ -52,6 +52,8 @@ ON
 
 Now go ahead and `SELECT * FROM easy_tracks LIMIT 15;` to see what we did. Cool, right? We can even start doing things like joins to this table as well. If you find yourself constantly doing the same joins (like we have this whole course) views can your friend.
 
-> SQLite does not materialized views like Postgres. That is to say, we cannot tell SQLite "run this query and store the results" like you can in Postgres. SQLite is always querying the live data underneath.
+> SQLite does not do materialized views like Postgres. That is to say, we cannot tell SQLite "run this query and store the results" like you can in Postgres. SQLite is always querying the live data underneath. [Click here to read more about materialized views][materialized].
 >
 > SQLite also does not support inserting into views like other databases do.
+
+[materialized]: https://sql.holt.courses/lessons/views/materialized-views

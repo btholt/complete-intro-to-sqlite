@@ -99,3 +99,5 @@ SELECT * FROM Artist ORDER BY name LIMIT 5;
 SELECT * FROM Artist ORDER BY name ASC LIMIT 5; -- Same as above query. ASC is implied if left out.
 SELECT * FROM Artist ORDER BY name DESC LIMIT 5;
 ```
+
+[sql]: https://frontendmasters.com/courses/sql/
