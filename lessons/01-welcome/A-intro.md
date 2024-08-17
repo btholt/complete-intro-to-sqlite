@@ -12,6 +12,8 @@ These are great if you need help on any of those subjects. You do not any exposu
 
 ## Who am I?
 
+![Brian Holt](/images/social-share-cover.jpg)
+
 My name is Brian and I am a staff product manager at [Neon][neon]. Neon is now my _third_ database company I've worked (fourth if you count Microsoft!) and I just love working developers and data. Have a good grasp of databases is essential to any app building and a little bit of skill and experience here will serve you well throughout your entire career!
 
 Prior to Neon, I've work as a PM and engineer at SQLite Cloud, Snowflake, Stripe, Microsoft, LinkedIn, Netflix, Reddit, and some other smaller companies. I've also been fortunate to teach at Frontend Masters a number of times and I'll keep doing it until they kick me out!
