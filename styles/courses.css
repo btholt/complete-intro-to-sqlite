@@ -96,6 +96,11 @@ header .cta-btn {
   align-items: center;
 }
 
+.cta-btn:hover {
+  background: #152837;
+  text-decoration: none;
+}
+
 .jumbotron {
   padding: 0;
 }
